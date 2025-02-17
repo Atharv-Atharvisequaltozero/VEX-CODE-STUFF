@@ -1,0 +1,38 @@
+if (type==6)
+{
+   //Sets Speed
+  Drive.setDriveVelocity(50,percent);
+  intake.setVelocity(100,percent);
+  conveyer.setVelocity(100,percent);
+
+
+ 
+   Drive.driveFor(forward, 2, inches);
+   Drive.turnFor(right, 90, degrees); 
+   Drive.driveFor( reverse, 48, inches);
+
+   Drive.turnFor(left, 45, degrees);
+   Drive.driveFor( reverse, 24, inches);
+   wait(3, seconds);
+   Drive.driveFor( forward, 24, inches);
+   Drive.driveFor( reverse, 24, inches);
+   Drive.driveFor( forward, 24, inches);
+   Drive.turnFor(right, 45, degrees);
+
+      Drive.turnFor(left,25,degrees);
+Drive.driveFor(forward, 250, inches);
+      Drive.turnFor(left,90,degrees);
+      Drive.driveFor(reverse, 200, inches);
+
+Drive.driveFor(forward, 20, inches);
+      Drive.turnFor(left,135,degrees);
+
+
+
+  
+  Drive.setDriveVelocity(5,percent);
+  Drive.driveFor(forward, 12, inches);
+  Drive.setDriveVelocity(20,percent);
+}
+
+
