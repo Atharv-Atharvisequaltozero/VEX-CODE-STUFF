@@ -508,6 +508,7 @@ if (type==4)
 }
 if (type==5)
 {
+  //This is a PID testing routine
   movePID(10,0.5,100);
 }
 
