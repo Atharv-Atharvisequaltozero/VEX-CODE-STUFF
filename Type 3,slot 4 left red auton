@@ -1,0 +1,38 @@
+if (type==3)
+{
+
+ //Sets Speed
+  Drive.setDriveVelocity(60,percent);
+  intake.setVelocity(100,percent);
+  conveyer.setVelocity(100,percent);
+  doinker.open();
+  Drive.driveFor(reverse,43,inches);
+   clamp.close();
+  conveyer.spin(forward);
+  Drive.turnToHeading(45,degrees);
+  Drive.driveFor(forward,15,inches);
+  conveyer.spin(forward);
+  intake.spin(forward);
+  wait(5,seconds);
+  Drive.driveFor(reverse,30,inches);
+
+
+
+  // //go to stake
+  // Drive.driveFor(forward, 36, inches);
+  // Drive.turnToHeading(270,degrees);
+  // Drive.driveFor(reverse,24,inches);
+
+  // //clamp stake
+  // clamp.close();
+  // conveyer.spin(forward);
+  
+  // //touch ladder
+  // Drive.turnToHeading(90,degrees);
+  // Drive.driveFor(forward,28,inches);
+
+
+
+
+
+}
